@@ -27,7 +27,7 @@ public class StringCalculator {
                 .map(CalcNumber::new)
                 .reduce(CalcNumber::sum)
                 .orElseGet(CalcNumber::new);
-        
+
         return sum.getValue();
 
     }
